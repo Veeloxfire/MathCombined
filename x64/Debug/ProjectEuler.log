@@ -1,8 +1,2 @@
-﻿  Fibonacci.cpp
-  ProjectEuler.cpp
-  UnlimitedInt.cpp
-D:\Visual Studio\Programs\ProjectEuler\UnlimitedInt.cpp(80,93): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-D:\Visual Studio\Programs\ProjectEuler\UnlimitedInt.cpp(92,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
-D:\Visual Studio\Programs\ProjectEuler\UnlimitedInt.cpp(93,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  ProjectEuler.vcxproj -> D:\Visual Studio\Programs\ProjectEuler\x64\Debug\ProjectEuler.exe
+﻿  ProjectEuler.cpp
+  ProjectEuler.vcxproj -> C:\Github Repos\Project Euler\MathCombined\x64\Debug\ProjectEuler.exe

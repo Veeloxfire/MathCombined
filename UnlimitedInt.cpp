@@ -26,13 +26,28 @@ void UnlimitedInt::AddIntAtPoint(int input, int point) {
 	}
 }
 
-int UnlimitedInt::howmanydigits(int input) {
+void UnlimitedInt::MultiplyByInt(int input) {
+	if (input == 0) {
+		std::vector<int> zero;
+		zero.push_back(0);
+		Number = zero;
+		return;
+	}
+	if (input == 1) {
+		return;
+	}
+	UnlimitedInt holder;
+	holder.Number = Number;
+	for (int i = 0; i < input-1; i++) {
+		AddUnlimitedInt(holder);
+	}
+}
 
-	cleanup();
+int UnlimitedInt::howmanydigits(int input) {
 
 	for (int i = 1; i < 10; i++) {
 		input -= perdigit;
-		if (input > 0 && input < perdigit) {
+		if (input >= 0 && input < perdigit) {
 			return i;
 		}
 	}
@@ -87,7 +102,6 @@ void UnlimitedInt::cleanup() {
 }
 
 void UnlimitedInt::stringToUnlimited(std::string &input) {
-	std::cout << input << std::endl;
 	int holder;
 	int length = input.length();
 	int unitlength = std::ceil(std::log10(perdigit));
@@ -104,3 +118,25 @@ void UnlimitedInt::stringToUnlimited(std::string &input) {
 		}
 	}
 }
+
+int UnlimitedInt::addDigitsAtPoint(int point) {
+	std::string num = to_string(Number[point]);
+	int output = 0;
+
+	for (int i = 0; i < num.size(); i++) {
+		output += stoi(num.substr(i, 1));
+	}
+
+	return output;
+}
+
+int UnlimitedInt::sumDigits() {
+	int output = 0;
+
+	for (int i = 0; i < Number.size(); i++) {
+		output += addDigitsAtPoint(i);
+	}
+	
+	return output;
+}
+

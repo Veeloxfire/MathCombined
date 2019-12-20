@@ -1,7 +1,7 @@
 #include "StringManip.h"
 
 
-std::vector<std::string> StringManip::LinesToVector(std::string &input) {
+std::vector<std::string> StringManip::SplitToVector(std::string &input) {
 	int found = 0;
 	int holder = 0;
 	std::vector<std::string> output;
@@ -15,4 +15,9 @@ std::vector<std::string> StringManip::LinesToVector(std::string &input) {
 	}
 
 	return output;
+}
+
+std::vector<std::string> StringManip::SplitToVector(std::string& input, int start_index, int end_index) {
+	std::string holder = input.substr(start_index, end_index - start_index);
+	return SplitToVector(holder);
 }

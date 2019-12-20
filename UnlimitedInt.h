@@ -11,6 +11,7 @@ public:
 
 	void AddInt(int input);
 	void AddUnlimitedInt(UnlimitedInt& input);
+	void MultiplyByInt(int input);
 	std::string asString();
 
 	void stringToUnlimited(std::string& input);
@@ -18,9 +19,13 @@ public:
 	int numDigits();
 	void cleanup();
 
+	int sumDigits();
+
+
 private:
 	int howmanydigits(int input);
 	int perdigit = 1000000000;
 	void AddIntAtPoint(int input, int point);
 	std::string digitAsString(int point);
+	int addDigitsAtPoint(int point);
 };
