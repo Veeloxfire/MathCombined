@@ -11,6 +11,7 @@ void PrimeList::ExtendList(int Limit) {
 			}
 		}
 		if (isPrime == true) {
+			
 			List.push_back(num);
 		}
 		num++;
@@ -18,6 +19,9 @@ void PrimeList::ExtendList(int Limit) {
 }
 
 bool PrimeList::PrimeCheck(int num) {
+	if (num < 2) {
+		return false;
+	}
 	if (num > List[List.size() - 1]) {
 		ExtendList(num+1);
 	}

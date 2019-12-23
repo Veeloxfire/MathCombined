@@ -21,3 +21,13 @@ std::vector<std::string> StringManip::SplitToVector(std::string& input, int star
 	std::string holder = input.substr(start_index, end_index - start_index);
 	return SplitToVector(holder);
 }
+
+std::string StringManip::Rotate(std::string& input) {
+	std::string first = input.substr(0, 1);
+	std::string back = "";
+	if (input.size() > 0) {
+		back = input.substr(1, input.size()-1);
+	}
+	back += first;
+	return back;
+}

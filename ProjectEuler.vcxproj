@@ -154,6 +154,7 @@
     <ClCompile Include="Factors.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="Permutations.cpp" />
     <ClCompile Include="PrimeList.cpp" />
     <ClCompile Include="ProjectEuler.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Factors.h" />
     <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="Grid.h" />
+    <ClInclude Include="Matrix.h" />
     <ClInclude Include="Permutations.h" />
     <ClInclude Include="PrimeList.h" />
     <ClInclude Include="StringManip.h" />

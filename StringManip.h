@@ -9,4 +9,6 @@ public:
 	std::vector<std::string> SplitToVector(std::string &input);
 
 	std::vector<std::string> SplitToVector(std::string& input, int start_index, int end_index);
+
+	std::string Rotate(std::string& input);
 };

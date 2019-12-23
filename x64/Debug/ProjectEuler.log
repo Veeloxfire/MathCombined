@@ -1,2 +1,12 @@
 ﻿  ProjectEuler.cpp
+C:\Github Repos\Project Euler\MathCombined\ProjectEuler.cpp(11,32): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Github Repos\Project Euler\MathCombined\ProjectEuler.cpp(19,50): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Github Repos\Project Euler\MathCombined\ProjectEuler.cpp(21,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Github Repos\Project Euler\MathCombined\ProjectEuler.cpp(33,33): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Github Repos\Project Euler\MathCombined\ProjectEuler.cpp(50,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Github Repos\Project Euler\MathCombined\ProjectEuler.cpp(52,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   ProjectEuler.vcxproj -> C:\Github Repos\Project Euler\MathCombined\x64\Debug\ProjectEuler.exe
